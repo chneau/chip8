@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "KGCifxxR5cm2gz94i2iha+RIZlk=",
+			"path": "github.com/mattn/go-runewidth",
+			"revision": "ce7b0b5c7b45a81508558cd1dba6bb1e4ddb51bb",
+			"revisionTime": "2018-04-08T05:53:51Z"
+		},
+		{
+			"checksumSHA1": "t+9cdHnOmsGrOG7sP9DfJUyEZuU=",
+			"path": "github.com/nsf/termbox-go",
+			"revision": "b66b20ab708e289ff1eb3e218478302e6aec28ce",
+			"revisionTime": "2018-08-19T12:58:58Z"
+		}
+	],
+	"rootPath": "github.com/chneau/chip8"
+}
