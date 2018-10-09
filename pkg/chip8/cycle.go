@@ -162,12 +162,7 @@ func (c *Chip8) emulateCycle() {
 			c.ST = c.V[op&0x0f00>>8]
 			c.PC += 2
 		case 0x001e:
-			if (c.I + uint16(c.V[op&0x0f00>>4])) > 0xfff {
-				c.V[0xf] = 1
-			} else {
-				c.V[0xf] = 0
-			}
-			c.I += uint16(c.V[op&0x0f00>>8])
+			c.I += uint16(c.V[(op&0x0F00)>>8])
 			c.PC += 2
 		case 0x0029:
 			c.I = 0x05 * (op & 0x0f00 >> 8)
