@@ -29,7 +29,11 @@ func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 	c := chip8.New()
-	err := c.LoadFromPath("roms/TICTAC")
+	rom := os.Getenv("ROM")
+	if rom == "" {
+		rom = "roms/TICTAC"
+	}
+	err := c.LoadFromPath(rom)
 	if err != nil {
 		panic(err)
 	}
