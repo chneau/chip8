@@ -19,7 +19,7 @@ trace:
 	go tool trace trace
 
 bench:
-	go test -benchmem -run=^$ bitbucket.org/chneau/solver -bench ^BenchmarkEvaluate$
+	go test -benchmem -run=^$ github.com/chneau/solver -bench ^BenchmarkEvaluate$
 
 clean:
 	rm -rf bin
